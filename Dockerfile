@@ -9,7 +9,9 @@ FROM tomcat
 MAINTAINER Xiaobing Liu "bjlxbliu@cn.ibm.com"
 
 #Run
-RUN cd struts2 
+RUN mkdir /app
+ADD struts/. /app
+RUN cd /app
 RUN mvn -clean package
 
 #Add
