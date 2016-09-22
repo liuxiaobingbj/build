@@ -10,7 +10,7 @@ MAINTAINER Xiaobing Liu "bjlxbliu@cn.ibm.com"
 
 #Run
 RUN mkdir /app
-ADD struts/. /app
+ADD struts2/. /app
 RUN cd /app
 RUN mvn -clean package
 
